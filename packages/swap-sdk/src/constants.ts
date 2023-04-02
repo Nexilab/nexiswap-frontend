@@ -6,6 +6,7 @@ export enum ChainId {
   GOERLI = 5,
   BSC = 56,
   BSC_TESTNET = 97,
+  NEXI = 4242,
 }
 
 export const ZERO_PERCENT = new Percent('0')
