@@ -1,6 +1,6 @@
 import { ChainId, JSBI, Percent, Token, WNATIVE } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH } from '@pancakeswap/tokens'
+import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH, nexiTokens } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
@@ -23,6 +23,22 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
     bscTokens.btcb,
     bscTokens.eth,
     bscTokens.usdc,
+  ],
+  [ChainId.NEXI]: [
+    nexiTokens.wnexi,
+    nexiTokens.cashusd,
+    nexiTokens.nexigem,
+    nexiTokens.digibns,
+    nexiTokens.cake,
+    nexiTokens.busd,
+    nexiTokens.usdt,
+    nexiTokens.eth,
+    nexiTokens.usdc,
+    nexiTokens.dai,
+    nexiTokens.bnb,
+    nexiTokens.doge,
+    nexiTokens.btc,
+    nexiTokens.ada,
   ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
