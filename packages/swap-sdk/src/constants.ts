@@ -1,6 +1,5 @@
 import { Percent } from '@pancakeswap/swap-sdk-core'
 import { ERC20Token } from './entities/token'
-import { FACTORY_ADDRESS_NEXI } from './constants';
 
 export enum ChainId {
   ETHEREUM = 1,

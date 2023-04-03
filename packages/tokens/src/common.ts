@@ -9,6 +9,42 @@ export const CAKE_MAINNET = new ERC20Token(
   'https://pancakeswap.finance/',
 )
 
+export const CASHUSD_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0x40831c05df5B929a86051715dC8226E2433BBe27',
+  18,
+  'CASHUSD',
+  'Cash USD',
+  'https://coins.nexi.technology/cashusd',
+)
+
+export const NEXIGEM_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0xFF03b0d2d8924df3A353c907F00AAB884E27fA07',
+  18,
+  'NEXIGEM',
+  'Nexi Gem',
+  'https://coins.nexi.technology/nexigem',
+)
+
+export const DIGIBNS_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0xFF03b0d2d8924df3A353c907F00AAB884E27fA07',
+  18,
+  'DIGIBNS',
+  'Digital Bonus',
+  'https://coins.nexi.technology/digibns',
+)
+
+export const CAKE_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0x89D78EC729FC12979D4128DEAE052412621AC540',
+  18,
+  'WCAKE',
+  'Wrapped PancakeSwap Token',
+  'https://wrappedtokens.nexi.technology/WCAKE',
+)
+
 export const CAKE_TESTNET = new ERC20Token(
   ChainId.BSC_TESTNET,
   '0xFa60D973F7642B748046464e165A65B7323b0DEE',
@@ -25,6 +61,24 @@ export const USDC_BSC = new ERC20Token(
   'USDC',
   'Binance-Peg USD Coin',
   'https://www.centre.io/usdc',
+)
+
+export const USDC_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0x50281A1B1dFAFaCF66492BA6E45E764A815FD829',
+  18,
+  'USDC',
+  'Wrapped USD Coin',
+  'https://wrappedtokens.nexi.technology/usdc',
+)
+
+export const DAI_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0xF64b0445629e87Bb59Ce019a8870ad4EC9F54F8F',
+  18,
+  'DAI',
+  'Wrapped Dai Stablecoin',
+  'https://wrappedtokens.nexi.technology/dai',
 )
 
 export const USDC_TESTNET = new ERC20Token(
@@ -61,6 +115,15 @@ export const USDT_BSC = new ERC20Token(
   'https://tether.to/',
 )
 
+export const USDT_NEXI = new ERC20Token(
+  ChainId.BSC,
+  '0xd922Ac06E37BdE3d9bCe02172Ff94D6BE294B917',
+  18,
+  'USDT',
+  'Wrapped Tether USD',
+  'https://wrappedtokens.nexi.technology/usdt',
+)
+
 export const USDT_ETH = new ERC20Token(
   ChainId.ETHEREUM,
   '0xdAC17F958D2ee523a2206206994597C13D831ec7',
@@ -77,6 +140,15 @@ export const BUSD_BSC = new ERC20Token(
   'BUSD',
   'Binance USD',
   'https://www.paxos.com/busd/',
+)
+
+export const BUSD_NEXI = new ERC20Token(
+  ChainId.NEXI,
+  '0xDeaE7C2ABE5d4556906B66f61C5c1AC406D4Ea43',
+  18,
+  'BUSD',
+  'Wrapped Binance USD',
+  'https://wrappedtokens.nexi.technology/BUSD',
 )
 
 export const BUSD_TESTNET = new ERC20Token(
@@ -106,20 +178,37 @@ export const BUSD_GOERLI = new ERC20Token(
   'https://www.paxos.com/busd/',
 )
 
+
+
 export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.GOERLI]: BUSD_GOERLI,
   [ChainId.BSC]: BUSD_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
+  [ChainId.NEXI]: BUSD_NEXI
 }
 
 export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
+  [ChainId.NEXI]: CAKE_NEXI,
+}
+
+export const CASHUSD = {
+  [ChainId.NEXI]: CASHUSD_NEXI,
+}
+
+export const NEXIGEM = {
+  [ChainId.NEXI]: NEXIGEM_NEXI,
+}
+
+export const DIGIBNS = {
+  [ChainId.NEXI]: DIGIBNS_NEXI,
 }
 
 export const USDC = {
   [ChainId.BSC]: USDC_BSC,
+  [ChainId.NEXI]: USDC_NEXI,
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,
@@ -127,7 +216,12 @@ export const USDC = {
 
 export const USDT = {
   [ChainId.BSC]: USDT_BSC,
+  [ChainId.NEXI]: USDT_NEXI,
   [ChainId.ETHEREUM]: USDT_ETH,
+}
+
+export const DAI = {
+  [ChainId.NEXI]: DAI_NEXI,
 }
 
 export const WBTC_ETH = new ERC20Token(
